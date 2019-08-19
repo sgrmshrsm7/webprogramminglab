@@ -36,3 +36,12 @@ p {
   font-size: 18pt;
   line-height: 1.6;
 }
+
+h1 {
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  font-size: 40pt;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-bottom: 2px solid #000;
+  text-shadow: 0 5px 10px #000;
+}
