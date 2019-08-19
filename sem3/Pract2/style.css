@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+
+.imgcrc {
+  border-radius: 50%;
+  margin-right: 10px;
+}
