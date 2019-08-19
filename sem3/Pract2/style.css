@@ -105,3 +105,8 @@ input[type=password] {
   background-color: #000000;
   font-size: 15pt;
 }
+
+hr {
+  border-top: 2px solid #000000;
+  margin: 50px 0;
+}
