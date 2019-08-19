@@ -72,3 +72,7 @@ h1 {
   width: 560px;
   border-radius: 10px;
 }
+
+input[type=text] {
+  width: 500px;
+}
