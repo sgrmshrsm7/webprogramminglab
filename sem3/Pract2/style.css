@@ -64,3 +64,11 @@ h1 {
   border-radius: 10px;
   width: 380px;
 }
+
+.formcontainer {
+  margin: 0 auto;
+  border: 2px solid #000000;
+  padding: 30px;
+  width: 560px;
+  border-radius: 10px;
+}
