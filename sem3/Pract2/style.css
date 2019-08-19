@@ -12,3 +12,9 @@ body {
 .navbar-brand {
   margin-left: 20px;
 }
+
+.nav-item {
+  font-size: 15pt;
+  font-weight: bold;
+  margin: 0 30px;
+}
