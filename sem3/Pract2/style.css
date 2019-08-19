@@ -57,3 +57,10 @@ h1 {
   padding: 40px 40px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
+
+.myflex div {
+  background-color: #e6adbc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 380px;
+}
