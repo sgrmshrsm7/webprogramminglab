@@ -85,3 +85,8 @@ input[type=password] {
   margin-top: 20px;
   margin-left: 180px;
 }
+
+.btntxt {
+  font-size: 15pt;
+  margin: 5px;
+}
