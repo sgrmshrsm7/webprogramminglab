@@ -99,3 +99,9 @@ input[type=password] {
   border-top: 2px solid #000;
   padding: 40px 0;
 }
+
+.copyright {
+  text-align: center;
+  background-color: #000000;
+  font-size: 15pt;
+}
