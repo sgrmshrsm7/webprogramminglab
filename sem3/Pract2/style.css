@@ -8,3 +8,7 @@
 body {
   background-color: #d4ebf2;
 }
+
+.navbar-brand {
+  margin-left: 20px;
+}
