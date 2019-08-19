@@ -90,3 +90,7 @@ input[type=password] {
   font-size: 15pt;
   margin: 5px;
 }
+
+.imgft {
+  filter: drop-shadow(0 0 10px #000);
+}
