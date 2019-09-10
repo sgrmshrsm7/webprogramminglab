@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookshelf [
+<!ELEMENT bookshelf (book*)>
+<!ELEMENT book (author, title, publisher, publishdate, description, location)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT publishdate (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+]>
+<bookshelf>
+    <book>
+        <author>Robert W. Sebesta</author>
+        <title>Programming the World Wide Web, 5rd edition</title>
+        <publisher>Addison Wesley</publisher>
+        <publishdate>2009</publishdate>
+        <description>Reference book for cp476</description>
+        <location>https://www.amazon.com/Programming-World-Wide-Web-2009/dp/0136076637</location>
+    </book>
+    <book>
+        <author>Walter Lewin</author>
+        <title>For the love of physics</title>
+        <publisher>Warren Goldstein</publisher>
+        <publishdate>2012</publishdate>
+        <description>Amazing physics textbook</description>
+        <location>https://www.amazon.in/Love-Physics-Rainbow-Journey-Through/dp/145160713X</location>
+    </book>
+    <book>
+        <author>I.E. Irodov</author>
+        <title>Problems in General Physics</title>
+        <publisher>G.K. Publishers</publisher>
+        <publishdate>2008</publishdate>
+        <description>Question Bank for physics</description>
+        <location>https://en.wikipedia.org/wiki/Problems_in_General_Physics</location>
+    </book>
+<bookshelf>
