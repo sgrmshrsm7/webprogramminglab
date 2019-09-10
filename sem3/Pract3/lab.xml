@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "lab.xsl"?>
+<bookshelf>
+    <book>
+        <author>Robert W. Sebesta</author>
+        <title>Programming the World Wide Web, 5rd edition</title>
+        <publisher>Addison Wesley</publisher>
+        <publishdate>2009</publishdate>
+        <description>Reference book for cp476</description>
+        <location>abcd</location>
+    </book>
+    <book>
+        <author>Walter Lewin</author>
+        <title>For the love of physics</title>
+        <publisher>Warren Goldstein</publisher>
+        <publishdate>2012</publishdate>
+        <description>Amazing physics textbook</description>
+        <location>xyz</location>
+    </book>
+    <book>
+        <author>I.E. Irodov</author>
+        <title>Problems in General Physics</title>
+        <publisher>G.K. Publishers</publisher>
+        <publishdate>2008</publishdate>
+        <description>Question Bank for physics</description>
+        <location>lmn</location>
+    </book>
+<bookshelf>
