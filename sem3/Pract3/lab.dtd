@@ -1,0 +1,10 @@
+<!DOCTYPE bookshelf [
+<!ELEMENT bookshelf (book*)>
+<!ELEMENT book (author, title, publisher, publishdate, description, location)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT publishdate (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+]>
