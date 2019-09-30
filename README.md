@@ -1,4 +1,4 @@
 # webprogramminglab :computer:
 
 
-Place containing my Introduction to Web Programming (IWP) lab works and assignments
+Place containing my Web Programming lab works and assignments
