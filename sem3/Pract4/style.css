@@ -25,3 +25,7 @@ h2 {
 .form-group {
         margin-top: 15px;
 }
+
+label {
+        font-weight: bold;
+}
