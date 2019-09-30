@@ -6,3 +6,13 @@
 body {
         background: linear-gradient(#000, #4c4c4c);
 }
+
+.formcontainer {
+  margin: 5% auto;
+  background-color: #000d1a;
+  color: #ffffff;
+  border: 2px solid #000000;
+  padding: 30px;
+  width: 560px;
+  border-radius: 10px;
+}
