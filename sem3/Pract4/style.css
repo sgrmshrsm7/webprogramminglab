@@ -16,3 +16,8 @@ body {
   width: 560px;
   border-radius: 10px;
 }
+
+h2 {
+        border: 2px dashed #ffffff;
+        padding: 10px;
+}
