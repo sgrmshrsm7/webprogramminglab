@@ -29,3 +29,8 @@ h2 {
 label {
         font-weight: bold;
 }
+
+input[type=text] {
+        width: 500px;
+        background-color: #c4f2f2;
+}
