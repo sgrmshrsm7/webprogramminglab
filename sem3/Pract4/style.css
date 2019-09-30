@@ -21,3 +21,7 @@ h2 {
         border: 2px dashed #ffffff;
         padding: 10px;
 }
+
+.form-group {
+        margin-top: 15px;
+}
