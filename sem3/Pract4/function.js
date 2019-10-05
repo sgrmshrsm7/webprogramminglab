@@ -1,16 +1,15 @@
-function ValidateEmail(uname, eid)
+function ValidateData(fname, uname, passwd, cpwd, eid, mnum)
 {
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(uname.value.length > 6 && eid.value.match(mailformat))
+        if (confirm("Are you sure you want to continue?"))
         {
-                alert("Form submission successful!");
-                document.newletterform.username.focus();
-                return true;
-        }
-        else
-        {
-                alert("Invalid username or mail address!");
-                document.newletterform.username.focus();
-                return false;
+                let flag1 = 0, flag2 = 0;
+                for(i = 0; i < eid.value.length; i++)
+                {
+                        if(eid.value[i]=='@')
+                                flag1 = 1;
+                        if(eid.value[i]=='.')
+                                flag2 = 1;
+                }
+                
         }
 }
