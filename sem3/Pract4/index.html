@@ -7,25 +7,52 @@
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
                 <link rel="stylesheet" href="style.css">
         </head>
-        <body onload='document.newletterform.username.focus()'>
+        <body>
                 <div class="formcontainer">
                         <h2 align="center">Newsletter</h2>
-                        <form name="newletterform" action="#">
+                        <form name="newsletterform" action="#">
                                 <div class="form-group">
-                                        <label for="usr">Username :</label>
-                                        <input type="text" class="form-control" id="usr" name="username">
+                                        <label for="fname">First Name :</label>
+                                        <input type="text" class="form-control" id="name" name="firstname">
                                 </div>
                                 <div class="form-group">
-                                        <label for="name">Full Name :</label>
-                                        <input type="text" class="form-control" id="name" name="fullname">
+                                        <label for="lname">Last Name :</label>
+                                        <input type="text" class="form-control" id="name" name="lastname">
                                 </div>
                                 <div class="form-group">
                                         <label for="email">Email :</label>
                                         <input type="text" class="form-control" id="eid" name="email">
                                 </div>
                                 <div class="form-group">
+                                        <label for="mobilenumber">Mobile Number :</label>
+                                        <input type="text" class="form-control" id="mobilenumber" name="mobile">
+                                </div>
+                                <div class="form-group">
+                                        <label for="usr">Username :</label>
+                                        <input type="text" class="form-control" id="usr" name="username">
+                                </div>
+                                <div class="form-group">
                                         <label for="pwd">Password :</label>
                                         <input type="password" class="form-control" id="pwd" name="password">
+                                </div>
+                                <div class="form-group">
+                                        <label for="cpwd">Confirm Password :</label>
+                                        <input type="password" class="form-control" id="cpwd" name="confirmpassword">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="cpwd">Favourite player :</label>
+                                         <select>
+                                                <option value="cristiano">Cristiano Ronaldo</option>
+                                                <option value="messi">Leonel Messi</option>
+                                        </select> 
+                                </div>
+                                <div class="form-group">
+                                        <label for="cpwd">Gender :</label>
+                                                <br>
+                                                <input type="radio" name="gender" value="male"> Male<br>
+                                                <input type="radio" name="gender" value="female"> Female<br>
+                                                <input type="radio" name="gender" value="other"> Other
                                 </div>
                                 <div class="form-group">
                                         <label for="pwd">Select topics for Newsletter :</label>
@@ -45,7 +72,8 @@
                                                 </label>
                                         </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary" onclick="ValidateEmail(document.newletterform.username, document.newletterform.email)">
+                                
+                                <button type="submit" class="btn btn-primary" onclick="ValidateData(document.newsletterform.firstname, document.newsletterform.username, document.newsletterform.password, document.newsletterform.confirmpassword, document.newsletterform.email, document.newsletterform.mobile)">
                                         <div class="btntxt">Subscribe</div>
                                 </button>
                         </form>
