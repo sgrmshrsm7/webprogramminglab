@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Payment</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Style/payment.css">
+        <link rel="icon" type="image/png" href="Images/Vivago.png">
+        <script  src="jS/payment.js" type="text/javascript"></script>
+</head>
+        <body>
+                <div class="row">
+                        <div class="col-75">
+                                <div class="container">
+                                        <form  name="form1" action="congrats.html">
+                                                <div class="col-50">
+                                                        <h3>Payment</h3>
+                                                        <label for="fname">Accepted Cards</label>
+                                                        <div class="icon-container">
+                                                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                                                <i class="fa fa-cc-mastercard" style="color:blue;"></i>
+                                                                <i class="fa fa-cc-amex" style="color:red;"></i>
+                                                        </div>
+                                                        <label for="cname">Name on Card</label>
+                                                        <input style="width: 150%;" type="text"  id="cname" name="cardname" placeholder="Enter your name" onblur="checkname();">
+                                                        <p style="color: red;" id = "qwerty1" ></p>
+                                                        <label for="ccnum">Credit card number</label>
+                                                        <input style="width: 150%;" type="text"  id="ccnum" name="cardnum" placeholder="Enter credit card number without any special characters " onblur="cardnumber(document.form1.cardnum);">
+                                                        <p style="color: red;" id = "qwerty"></p>
+                                                        <label for="expmonth">Expiry Month</label>
+                                                        <select id="mySelect" class="v">
+                                                                <option value="jan">January</option>
+                                                                <option value="feb">February</option>
+                                                                <option value="mar">March</option>
+                                                                <option value="apr">April</option>
+                                                                <option value="may">May</option>
+                                                                <option value="jun">June</option>
+                                                                <option value="jul">July</option>
+                                                                <option value="aug">August</option>
+                                                                <option value="sep">September</option>
+                                                                <option value="oct">October</option>
+                                                                <option value="nov">November</option>
+                                                                <option value="dec">December</option>
+                                                        </select>
+                                                        <label for="expyear">Expiry Year</label>
+                                                        <select id="expyear" class="v">
+                                                                <option value="2020">2020</option>
+                                                                <option value="2021">2021</option>
+                                                                <option value="2022">2022</option>
+                                                                <option value="2023">2023</option>
+                                                                <option value="2024">2024</option>
+                                                        </select>
+                                                        <label for="cvv">CVV</label>
+                                                        <input style="width: 150%;" type="text" id="cv" name="cv" placeholder="Enter CVV(3-digit number provided on the backside of credit card)" onblur="cvvcheck();">
+                                                        <p style="color: red;" id="demo"></p>
+                                                        <input  class="btn" type="button" value="Proceed" onclick="finalcheck();"  />
+                                                </div>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+        </body>
+</html>
