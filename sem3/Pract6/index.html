@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+                <meta charset="utf-8">
+                <link rel="stylesheet" href="Style/style.css">
+                <link rel="stylesheet" href="Style/slide.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="icon" type="image/png" href="Images/Vivago.png">
+                <title>Vivago</title>
+        </head>
+        <body>
+                <header>
+                        <div class="head-flex">
+                                <a href="index.html" class="sitetitle">
+                                        Vivago
+                                </a>
+                        </div>
+                        <div class="header-content">
+                                Hotels? Vivago!
+                        </div>
+                        <img src="Images/scroll.png" alt="ScrollDown" onClick="document.getElementById('maincontent').scrollIntoView();" class="scrolldowntocontent">
+                </header>
+                <div id="maincontent"></div>
+
+                <form class="search-container" action="Php/vivago.php" method="post">
+                        <h1>Search Hotels</h1>
+                        <div class="search-bar">
+                                <div class="">
+
+                                <label for="">City: </label>
+                                        <select name="city">
+                                                <option value="Nagpur">Nagpur</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Hyderabad">Hyderabad</option>
+                                                <option value="Chennai">Chennai</option>
+                                                <option value="Mumbai">Mumbai</option>
+                                        </select>
+
+                                </div>
+                                <div>
+                                        <label for="">Checkin Date : </label>
+                                        <input type="date" name="" value="" placeholder="Checkin Date" required>
+                                </div>
+                                <button type="submit" class="searchbutton">Search&nbsp;<i class="fa fa-search"></i></button>
+                        </div>
+                </form>
+
+                <a href="offers.html">
+                        <img src="Images/offer.png" alt="Offer" class="imgoffer">
+                </a>
+
+                <div class="main">
+                        <div class="slider">
+                                <ul class="slider-parent">
+                                        <li class="images-list" data-slider="1"></li>
+                                        <li class="images-list" data-slider="2"></li>
+                                        <li class="images-list" data-slider="3"></li>
+                                        <li class="images-list" data-slider="4"></li>
+                                        <li class="images-list" data-slider="5"></li>
+                                        <li class="images-list" data-slider="6"></li>
+                                </ul>
+                                <ol class="buttom-circles">
+                                        <li class="buttom-circles-list slider-active" data-slider="1"><i class="fa fa-circle-thin"></i></li>
+                                        <li class="buttom-circles-list" data-slider="2"><i class="fa fa-circle-thin"></i></li>
+                                        <li class="buttom-circles-list" data-slider="3"><i class="fa fa-circle-thin"></i></li>
+                                        <li class="buttom-circles-list" data-slider="4"><i class="fa fa-circle-thin"></i></li>
+                                        <li class="buttom-circles-list" data-slider="5"><i class="fa fa-circle-thin"></i></li>
+                                        <li class="buttom-circles-list" data-slider="6"></li>
+                                </ol>
+                                <i class="fa fa-chevron-right fa-5x"></i>
+                                <i class="fa fa-chevron-left fa-5x"></i>
+                        </div>
+                </div>
+
+                <footer>
+                        <div class="followtray">
+                                <a href="https://twitter.com/sgrmshrsm7" class="fa fa-twitter"></a>
+                                <a href="https://github.com/sgrmshrsm7" class="fa fa-github"></a>
+                                <a href="https://instagram.com/sgrmshrsm7" class="fa fa-instagram"></a>
+                                <a href="https://facebook.com/sgrmshrsm7" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="copyrights">
+                                &copy; 2019 <b>|</b> Developed by <a href="https://sgrmshrsm7.github.io">@sgrmshrsm7</a>
+                        </div>
+                </footer>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	        <script  src="jS/slide.js" type="text/javascript"></script>
+        </body>
+</html>
