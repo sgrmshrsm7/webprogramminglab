@@ -40,7 +40,7 @@
                         <tr>
                                 <td class="selecthotels">
                                         <label class="container">
-                                                <input type="radio" name="price" value="<?php $res['Costpernight']; ?>">
+                                                <input type="radio" name="price" value="<?php $res['Costpernight']; ?>" required>
                                                 <span class="checkmark"></span>
                                         </label>
                                 </td>
