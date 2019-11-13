@@ -104,6 +104,7 @@ function finalcheck()
         else
         {
                 alert("Payment Processed Successfully");
+                window.location="congrats.html";
                 return true;
         }
 }
