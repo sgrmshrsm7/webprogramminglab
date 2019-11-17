@@ -12,3 +12,4 @@
 
 
 ## Index Page
+![Index Page](https://github.com/sgrmshrsm7/webprogramminglab/blob/master/sem3/Pract6/Images/Preview/indexpreview.png)
