@@ -4,4 +4,4 @@
 
 
 ## Signup Page
-![Vivago Logo](https://github.com/sgrmshrsm7/webprogramminglab/blob/master/sem3/Pract6/Images/Vivago.png)
+![Vivago Logo](https://github.com/sgrmshrsm7/webprogramminglab/blob/master/sem3/Pract6/Images/Preview/signuppreview.png)
