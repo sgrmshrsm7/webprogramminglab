@@ -28,4 +28,4 @@
 
 ## Payment Page
 
-![Payment Page](https://github.com/sgrmshrsm7/webprogramminglab/blob/master/sem3/Pract6/Images/Preview/paymentpagepreview.png)
+![Payment Page](https://github.com/sgrmshrsm7/webprogramminglab/blob/master/sem3/Pract6/Images/Preview/paymentpreview.png)
