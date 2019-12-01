@@ -24,3 +24,6 @@
 ## Hotel Booking Page
 
 ![Hotel Booking Page](https://github.com/sgrmshrsm7/webprogramminglab/blob/master/sem3/Pract6/Images/Preview/hotelselectpreview.png)
+
+
+## Payment Page
