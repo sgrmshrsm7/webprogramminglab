@@ -4,7 +4,7 @@ import java.lang.String;
 public class CarRental implements Runnable
 {	
 	static ArrayList<User> userList = new ArrayList<User>();
-    static ArrayList<Car> carList = new ArrayList<Car>();
+	static ArrayList<Car> carList = new ArrayList<Car>();
     static ArrayList<Driver> driverList = new ArrayList<Driver>();
     
 	public void run()
@@ -109,6 +109,7 @@ public class CarRental implements Runnable
         	    }
         	    sc.nextLine(); // clears the buffer
             } while (choice!=1 && choice!=2);
+			
         } while(choice==1);  
         sc.close();
     }
