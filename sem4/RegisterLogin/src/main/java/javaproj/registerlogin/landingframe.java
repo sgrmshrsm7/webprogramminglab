@@ -20,6 +20,7 @@ public class landingframe {
     JLabel tlabel;
     JButton button;
     JButton button1;
+    JButton button2;
     
     landingframe() throws IOException
     {
@@ -29,6 +30,7 @@ public class landingframe {
         tlabel = new JLabel();
         button = new JButton();
         button1 = new JButton();
+        button2 = new JButton();
         mainpanel = new JPanel();
         
             mainpanel.setLayout(null);
@@ -70,6 +72,16 @@ public class landingframe {
             }
             });
             mainpanel.add(button1);
+            
+            button2.setText("Exit");
+            button2.setBounds(100, 430, 200, 40 );
+            button2.addActionListener(new ActionListener() { 
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+            }
+            });
+            mainpanel.add(button2);
             
             BufferedImage myPicture = ImageIO.read(new File("src/main/java/javaproj/registerlogin/images/pen.png"));
             tlabel = new JLabel(new ImageIcon(myPicture));
