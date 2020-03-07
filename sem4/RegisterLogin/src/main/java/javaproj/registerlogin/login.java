@@ -3,6 +3,7 @@ package javaproj.registerlogin;
 import java.io.*;
 import java.awt.*;
 import javax.swing.*;
+import java.sql.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -19,9 +20,10 @@ public class login {
     JLabel mainlabel;
     JLabel tlabel;
     JLabel tlabel1;
+    JLabel tlabel1Err;
     JTextField t1;
     JLabel tlabel2;
-    JTextField t2;
+    JPasswordField t2;
     JLabel tlabel3;
     JTextField t3;
     JLabel tlabel4;
@@ -62,7 +64,7 @@ public class login {
             tlabel2.setBounds(100, 200, 200, 35);
             tlabel2.setFont(new Font("Serif", Font.BOLD, 18));
             mainpanel.add(tlabel2);
-            t2 = new JTextField(16);
+            t2 = new JPasswordField(16);
             t2.setFont(new Font("Serif", Font.PLAIN, 17));
             t2.setForeground(new Color(50, 50, 50));
             t2.setMargin(new Insets(0, 7, 0, 0));
@@ -89,10 +91,18 @@ public class login {
             t3.setMargin(new Insets(0, 7, 0, 0));
             t3.setBounds(400, 320, 100, 35);
             mainpanel.add(t3);
-            BufferedImage myPicture = ImageIO.read(new File("src/main/java/javaproj/registerlogin/images/3.png"));
+            
+            int i = (int)(Math.random() * 4) + 1;
+            BufferedImage myPicture = ImageIO.read(new File("src/main/java/javaproj/registerlogin/images/" + i + ".png"));
+            String captcha[] = {"89074","03215","44908","94460"};
             tlabel5 = new JLabel(new ImageIcon(myPicture));
             tlabel5.setBounds(550, 300, 150, 60);
             mainpanel.add(tlabel5);
+            
+            tlabel1Err = new JLabel("", JLabel.LEFT);
+            tlabel1Err.setBounds(300, 350, 200, 35);
+            tlabel1Err.setFont(new Font("Serif", Font.BOLD, 18));
+            mainpanel.add(tlabel1Err);
             
             button.setText("Clear");
             button.setBounds(100, 420, 200, 40 );
@@ -112,7 +122,66 @@ public class login {
                 @Override
                 public void actionPerformed(ActionEvent e)
                 {
-                    
+                    try {
+                        String dbURL = "jdbc:mysql://localhost:3306/logindetails";
+                        String un = "sgr";
+                        String pw = "Pass@123";
+                        Connection connection = DriverManager.getConnection(dbURL, un, pw);
+                        Statement statement = connection.createStatement();
+                        if(utype.getSelectedItem().equals("   Admin")) {
+                            ResultSet admin = statement.executeQuery(
+                            "SELECT * FROM admin ");
+                            un = t1.getText();
+                            pw = t2.getText();
+                            boolean found = false;
+                            while(admin.next()) {
+                                if(un.equals(admin.getString(2))) {
+                                    if(pw.equals(admin.getString(3))) {
+                                        found = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            boolean cap = false;
+                            if(captcha[i-1].equals(t3.getText())) cap = true;
+
+                            if(!found) {
+                                tlabel1Err.setText("Invalid Credentials");
+                            }
+                            else if(!cap) {
+                                tlabel1Err.setText("Incorrect Captcha");
+                            }
+                            else {
+                                tlabel1Err.setText("");
+                                frame.dispose();
+                                adminpage AP = new adminpage(un);
+                            }
+                        }
+                        else {
+                            un = t1.getText();
+                            pw = t2.getText();
+                            ResultSet users = statement.executeQuery(
+                            "SELECT * FROM users where UserName = '" + un + "' and UserPassword = '" + pw + "'");
+                            
+                            boolean cap = false;
+                            if(captcha[i-1].equals(t3.getText())) cap = true;
+
+                            if(!users.next()) {
+                                tlabel1Err.setText("Invalid Credentials");
+                            }
+                            else if(!cap) {
+                                tlabel1Err.setText("Incorrect Captcha");
+                            }
+                            else {
+                                frame.dispose();
+                                selecttest ST = new selecttest(users.getString(2));
+                            }
+                        }
+                    } catch(SQLException ex) {
+                        for(Throwable t : ex) {
+                            System.out.println(t);
+                        }
+                    }
                 }
             });
             mainpanel.add(button1);
