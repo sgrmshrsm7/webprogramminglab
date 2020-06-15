@@ -1,0 +1,16 @@
+com/mycompany/data/md5.class
+com/mycompany/servlets/groupList.class
+com/mycompany/servlets/getMembers.class
+com/mycompany/data/DatabaseConnection.class
+com/mycompany/servlets/SignUp.class
+com/mycompany/data/formgroup.class
+com/mycompany/servlets/deletetable.class
+com/mycompany/servlets/admintable.class
+com/mycompany/servlets/displayFollowingGroups.class
+com/mycompany/data/signUpDetails.class
+com/mycompany/data/chat.class
+com/mycompany/servlets/login.class
+com/mycompany/servlets/chatstore.class
+com/mycompany/data/loginDetails.class
+com/mycompany/servlets/reload.class
+com/mycompany/servlets/newgroup.class

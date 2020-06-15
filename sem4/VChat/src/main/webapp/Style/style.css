@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        font-family: 'Balsamiq Sans', cursive;
+}
+
+body {
+        background-color: #d8d8d8 !important;
+}
+.colorcontainer {
+        background-color: dodgerblue;
+        top: 0;
+        height: 30vh;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+}
+
+.formcontainer {
+        margin: 4% auto;
+        margin-bottom: 1%;
+        background-color: #ffe;
+        color: #222;
+        padding: 0px;
+        padding-bottom: 1px;
+        width: 550px;
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.3) 0 0 10px;
+}
+
+.heading {
+        padding: 30px;
+        background-color: rgb(0,128,255);
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+        font-size: 30pt;
+        color: #ffffff;
+}
+
+.formheading {
+        font-weight: bold;
+        font-size: 23pt;
+        padding: 30px;
+        padding-left: 65px;
+        padding-bottom: 15px;
+}
+
+p {
+        margin: auto 65px;
+        color: #676767;
+        font-size: 15pt;
+}
+
+input[type=text], input[type=password] {
+        margin: 20px auto;
+        margin-top: 30px;
+        width: 55%;
+        height: 30px;
+        font-size: 17pt;
+        padding: 7px;
+        padding-left: 20px;
+        display: block;
+        border: 0;
+        height: 35px;
+        border-radius: 3px;
+        border-bottom: 2px solid #5a5a5a;
+        background-color: inherit;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 55%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 55%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.buttoncontainer {
+        display: flex;
+        justify-content: space-around;
+}
+
+.formcontainer button, .dummybutton {
+        display: block;
+        margin: 40px auto;
+        margin-top: 30px;
+	width: 184px;
+	text-align: center;
+        border-radius: 5px;
+        background-color: rgb(0,128,255);
+        border: 0;
+}
+
+.formcontainer button:hover, .dummybutton:hover {
+        background-color: rgba(0,128,255,0.8);
+}
+
+.btntxt {
+        font-size: 20pt;
+        color: #ffffff;
+        margin: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#unerror {
+	color: red;
+	text-align: center;
+}
+
+#passerror {
+	color: red;
+	text-align: center;
+}
+
+#emailerror {
+        color: red;
+        text-align: center;
+}
+
+#cpasserror {
+        color: red;
+        text-align: center;
+}
+
+#loginerror {
+        color: red;
+        text-align: center;
+}
+
+.foot {
+        color: rgb(0,128,255);
+        display: block;
+        margin-top: auto;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+.adminform {
+        width: 80vw;
+}
+
+table {
+        width: 60vw;
+        margin: 20px auto;
+}
+
+th, td {
+        border: 1px solid black;
+        width: 20vw;
+        padding: 10px;
+        border-radius: 5px;
+}
+
+th {
+        font-size: 20pt;
+        color: #ffffff;
+        background-color: dodgerblue;
+}
+
+td {
+        font-size: 17pt;
+}
+
+.deletebutton {
+        display: block;
+        margin: auto;
+        width: 184px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgb(0,128,255);
+        cursor: pointer;
+}
+
+.deletebutton:hover {
+        background-color: rgba(0,128,255,0.8);
+}
+
+.deletebtntxt {
+        font-size: 17pt;
+        color: #ffffff;
+        margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+        .formcontainer{
+                width: 80vw;
+                padding-bottom: 10px;
+        }
+
+        .heading {
+                font-size: 27pt;
+                padding: 20px;
+        }
+        
+        .formheading{
+                padding-left: 0;
+                font-size: 20pt;
+                padding: 20px;
+                text-align: center;
+        }
+        
+        input[type=text], input[type=password] {
+                height: 30px;
+                font-size: 14pt;
+                margin-top: 20px;
+        }
+        
+        p {
+                text-align: center;
+                font-size: 15pt;
+                margin: 0;
+        }
+        
+        .buttoncontainer {
+                flex-direction: column;
+        }
+        
+        .formcontainer button {
+                margin: 10px auto;
+                width: 150px;
+        }
+        
+        .btntxt {
+                font-size: 16pt;
+        }
+        
+        .foot {
+                font-size: 12pt;
+                margin-top: 10px;
+        }
+        
+        th {
+                font-size: 15pt;
+        }
+        
+        td {
+                font-size: 13pt;
+        }
+        
+        .deletebutton {
+                width: 100px;
+                padding: 5px;
+        }
+        
+        .deletebtntxt {
+                font-size: 12pt;
+                color: #ffffff;
+                margin: 10px;
+        }
+        
+        .adminform {
+                width: 90vw;
+        }
+}
+
+@media only screen and (max-width: 500px) {
+        .formcontainer{
+                width: 90vw;
+        }
+}
